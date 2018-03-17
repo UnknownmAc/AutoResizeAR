@@ -5011,14 +5011,18 @@ public:
 	GameObject_t1113636619 * ___lamp_4;
 	// UnityEngine.GameObject ScaleARControl::cabinet
 	GameObject_t1113636619 * ___cabinet_5;
+	// UnityEngine.GameObject ScaleARControl::chairDescText
+	GameObject_t1113636619 * ___chairDescText_6;
 	// System.Boolean ScaleARControl::chairButtonClicked
-	bool ___chairButtonClicked_6;
+	bool ___chairButtonClicked_7;
 	// System.Boolean ScaleARControl::tableButtonClicked
-	bool ___tableButtonClicked_7;
+	bool ___tableButtonClicked_8;
 	// System.Boolean ScaleARControl::lampButtonClicked
-	bool ___lampButtonClicked_8;
+	bool ___lampButtonClicked_9;
 	// System.Boolean ScaleARControl::cabinetButtonClicked
-	bool ___cabinetButtonClicked_9;
+	bool ___cabinetButtonClicked_10;
+	// System.Int32 ScaleARControl::frames
+	int32_t ___frames_11;
 
 public:
 	inline static int32_t get_offset_of_chair_2() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___chair_2)); }
@@ -5057,36 +5061,53 @@ public:
 		Il2CppCodeGenWriteBarrier((&___cabinet_5), value);
 	}
 
-	inline static int32_t get_offset_of_chairButtonClicked_6() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___chairButtonClicked_6)); }
-	inline bool get_chairButtonClicked_6() const { return ___chairButtonClicked_6; }
-	inline bool* get_address_of_chairButtonClicked_6() { return &___chairButtonClicked_6; }
-	inline void set_chairButtonClicked_6(bool value)
+	inline static int32_t get_offset_of_chairDescText_6() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___chairDescText_6)); }
+	inline GameObject_t1113636619 * get_chairDescText_6() const { return ___chairDescText_6; }
+	inline GameObject_t1113636619 ** get_address_of_chairDescText_6() { return &___chairDescText_6; }
+	inline void set_chairDescText_6(GameObject_t1113636619 * value)
 	{
-		___chairButtonClicked_6 = value;
+		___chairDescText_6 = value;
+		Il2CppCodeGenWriteBarrier((&___chairDescText_6), value);
 	}
 
-	inline static int32_t get_offset_of_tableButtonClicked_7() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___tableButtonClicked_7)); }
-	inline bool get_tableButtonClicked_7() const { return ___tableButtonClicked_7; }
-	inline bool* get_address_of_tableButtonClicked_7() { return &___tableButtonClicked_7; }
-	inline void set_tableButtonClicked_7(bool value)
+	inline static int32_t get_offset_of_chairButtonClicked_7() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___chairButtonClicked_7)); }
+	inline bool get_chairButtonClicked_7() const { return ___chairButtonClicked_7; }
+	inline bool* get_address_of_chairButtonClicked_7() { return &___chairButtonClicked_7; }
+	inline void set_chairButtonClicked_7(bool value)
 	{
-		___tableButtonClicked_7 = value;
+		___chairButtonClicked_7 = value;
 	}
 
-	inline static int32_t get_offset_of_lampButtonClicked_8() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___lampButtonClicked_8)); }
-	inline bool get_lampButtonClicked_8() const { return ___lampButtonClicked_8; }
-	inline bool* get_address_of_lampButtonClicked_8() { return &___lampButtonClicked_8; }
-	inline void set_lampButtonClicked_8(bool value)
+	inline static int32_t get_offset_of_tableButtonClicked_8() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___tableButtonClicked_8)); }
+	inline bool get_tableButtonClicked_8() const { return ___tableButtonClicked_8; }
+	inline bool* get_address_of_tableButtonClicked_8() { return &___tableButtonClicked_8; }
+	inline void set_tableButtonClicked_8(bool value)
 	{
-		___lampButtonClicked_8 = value;
+		___tableButtonClicked_8 = value;
 	}
 
-	inline static int32_t get_offset_of_cabinetButtonClicked_9() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___cabinetButtonClicked_9)); }
-	inline bool get_cabinetButtonClicked_9() const { return ___cabinetButtonClicked_9; }
-	inline bool* get_address_of_cabinetButtonClicked_9() { return &___cabinetButtonClicked_9; }
-	inline void set_cabinetButtonClicked_9(bool value)
+	inline static int32_t get_offset_of_lampButtonClicked_9() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___lampButtonClicked_9)); }
+	inline bool get_lampButtonClicked_9() const { return ___lampButtonClicked_9; }
+	inline bool* get_address_of_lampButtonClicked_9() { return &___lampButtonClicked_9; }
+	inline void set_lampButtonClicked_9(bool value)
 	{
-		___cabinetButtonClicked_9 = value;
+		___lampButtonClicked_9 = value;
+	}
+
+	inline static int32_t get_offset_of_cabinetButtonClicked_10() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___cabinetButtonClicked_10)); }
+	inline bool get_cabinetButtonClicked_10() const { return ___cabinetButtonClicked_10; }
+	inline bool* get_address_of_cabinetButtonClicked_10() { return &___cabinetButtonClicked_10; }
+	inline void set_cabinetButtonClicked_10(bool value)
+	{
+		___cabinetButtonClicked_10 = value;
+	}
+
+	inline static int32_t get_offset_of_frames_11() { return static_cast<int32_t>(offsetof(ScaleARControl_t609880907, ___frames_11)); }
+	inline int32_t get_frames_11() const { return ___frames_11; }
+	inline int32_t* get_address_of_frames_11() { return &___frames_11; }
+	inline void set_frames_11(int32_t value)
+	{
+		___frames_11 = value;
 	}
 };
 
@@ -5988,16 +6009,18 @@ extern const int32_t g_FieldOffsetTable2163[3] =
 	DeployStageOnce_t3640858018::get_offset_of__previousAnchor_4(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2164 = { sizeof (ScaleARControl_t609880907), -1, 0, 0 };
-extern const int32_t g_FieldOffsetTable2164[8] = 
+extern const int32_t g_FieldOffsetTable2164[10] = 
 {
 	ScaleARControl_t609880907::get_offset_of_chair_2(),
 	ScaleARControl_t609880907::get_offset_of_table_3(),
 	ScaleARControl_t609880907::get_offset_of_lamp_4(),
 	ScaleARControl_t609880907::get_offset_of_cabinet_5(),
-	ScaleARControl_t609880907::get_offset_of_chairButtonClicked_6(),
-	ScaleARControl_t609880907::get_offset_of_tableButtonClicked_7(),
-	ScaleARControl_t609880907::get_offset_of_lampButtonClicked_8(),
-	ScaleARControl_t609880907::get_offset_of_cabinetButtonClicked_9(),
+	ScaleARControl_t609880907::get_offset_of_chairDescText_6(),
+	ScaleARControl_t609880907::get_offset_of_chairButtonClicked_7(),
+	ScaleARControl_t609880907::get_offset_of_tableButtonClicked_8(),
+	ScaleARControl_t609880907::get_offset_of_lampButtonClicked_9(),
+	ScaleARControl_t609880907::get_offset_of_cabinetButtonClicked_10(),
+	ScaleARControl_t609880907::get_offset_of_frames_11(),
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2165 = { sizeof (demoBehaviour_t3338816899), -1, 0, 0 };
 extern const int32_t g_FieldOffsetTable2165[3] = 

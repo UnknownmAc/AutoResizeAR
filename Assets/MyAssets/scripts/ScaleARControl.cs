@@ -7,11 +7,14 @@ public class ScaleARControl : MonoBehaviour {
 	public GameObject table;
 	public GameObject lamp;
 	public GameObject cabinet;
+	public GameObject chairDescText;
 
 	private bool chairButtonClicked = false;
 	private bool tableButtonClicked = false;
 	private bool lampButtonClicked = false;
 	private bool cabinetButtonClicked = false;
+
+	private int frames = 0;
 
 
 	// Use this for initialization
@@ -19,6 +22,8 @@ public class ScaleARControl : MonoBehaviour {
 		chair.SetActive (false);
 		lamp.SetActive (false);
 		cabinet.SetActive (false);
+		table.SetActive (false);
+		chairDescText.SetActive (false);
 	}
 
 	// Update is called once per frame
@@ -26,6 +31,11 @@ public class ScaleARControl : MonoBehaviour {
 		chair.SetActive (chairButtonClicked);
 		lamp.SetActive (lampButtonClicked);
 		cabinet.SetActive (cabinetButtonClicked);
+		table.SetActive (tableButtonClicked);
+
+		if(frames >= 250)
+			chairDescText.SetActive (true);
+		frames++;
 	}
 
 	public void HandleIncreaseScale() {
